@@ -64,4 +64,10 @@ var testCases = []struct {
 		0,
 		true,
 	},
+	{ //added case to check runes
+		"àò",
+		"ìò",
+		1,
+		false,
+	},
 }
