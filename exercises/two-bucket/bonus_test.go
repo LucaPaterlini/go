@@ -15,8 +15,20 @@ var noSolutionCases = []bucketTestCase{
 	},
 }
 
-func TestSolve_bonus(t *testing.T) {
+var bonusCases = []bucketTestCase{
+	{"Adding Complexity",
+		333333, 666667, 1, "one", "one", 1999992, 666667, false,
+	},
+}
+
+func TestSolve_noSolution(t *testing.T) {
 	for _, tc := range noSolutionCases {
+		runTestCase(t, tc)
+	}
+}
+
+func TestSolve_bonus(t *testing.T) {
+	for _, tc := range bonusCases {
 		runTestCase(t, tc)
 	}
 }
